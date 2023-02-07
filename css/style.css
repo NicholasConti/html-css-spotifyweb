@@ -12,6 +12,9 @@ body{
 .flex{
     display: flex;
 }
+.jcsb{
+    justify-content: center;
+}
 .column{
     flex-direction: column;
 }
@@ -51,32 +54,6 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------------------------------- */
 .col-big{
    width: 100%;
@@ -88,9 +65,18 @@ ul{
 .upgrade{
     height: 90px;
     background-color: rgba(8,11,18,0.5);
+    text-align: right;
+    line-height: 90px;
+    padding-right: 5px;
 }
 
-
+.btn{
+    color: white;
+    border: 1px solid white;
+    padding: 15px 40px;
+    background-color: transparent;
+    border-radius: 40px;
+}
 
 
 
@@ -121,5 +107,9 @@ footer{
     }
     .playlist > div{
         overflow: auto;
+    }
+
+    .upgrade{
+        width: calc(100% - 230px);
     }
 }
