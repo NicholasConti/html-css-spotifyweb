@@ -13,10 +13,24 @@ body{
     display: flex;
 }
 
+
+/* ---------------------------------------------- */
+
 .col-nav{
     width: 50px;
     height: calc(100vh - 90px);
     background-color: black;
+}
+
+.col-big{
+   width: 100%;
+   height: calc(100vh - 90px);
+   background-color: #141922;
+}
+
+.upgrade{
+    height: 90px;
+    background-color: rgba(8,11,18,0.5);
 }
 
 
