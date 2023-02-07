@@ -12,19 +12,76 @@ body{
 .flex{
     display: flex;
 }
+.column{
+    flex-direction: column;
+}
 
-
+ul{
+    list-style-type: none;
+}
+.hidden{
+    display: none;
+}
 /* ---------------------------------------------- */
-
+/* COL-NAV */
 .col-nav{
     width: 50px;
     height: calc(100vh - 90px);
     background-color: black;
+    justify-content: space-between;
+    color: grey;
+    padding: 10px 0;
 }
 
+.col-nav li{
+    text-align: center;
+}
+
+.logo-small{
+    width: 20px;
+}
+.flex.column li{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
 .col-big{
    width: 100%;
    height: calc(100vh - 90px);
+    overflow: auto;
    background-color: #141922;
 }
 
@@ -40,22 +97,29 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------------------------------- */
 /* FOOTER */
 footer{
     height: 90px;
     background-color: #282828;
+}
+
+/* ------------------------------------------------------ */
+@media screen and (min-width:552px){
+    .col-nav{
+        width: 230px;
+        padding: 20px 15px;
+    }
+    .col-nav li{
+        text-align: left;
+    }
+    .mobile{
+        display: none;
+    }
+    .hidden{
+        display: inline-block;
+    }
+    .playlist > div{
+        overflow: auto;
+    }
 }
