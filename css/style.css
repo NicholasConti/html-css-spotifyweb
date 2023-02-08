@@ -8,6 +8,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: grey;
 }
+
 /* ---------------------------------------------- */
 /* COMMON */
 .flex{
@@ -35,6 +36,7 @@ ul{
     justify-content: space-between;
     color: grey;
     padding: 10px 0;
+    overflow: hidden;
 }
 
 .col-nav li{
@@ -48,6 +50,11 @@ ul{
     margin-bottom: 10px;
 }
 
+.playlist {
+    overflow: auto;
+    background-color: red;
+    flex-grow: 1;
+}
 /* ---------------------------------------------- */
 .col-big{
    width: calc(100% - 50px);
