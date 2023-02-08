@@ -33,10 +33,10 @@ ul{
     width: 50px;
     height: calc(100vh - 90px);
     background-color: black;
-    justify-content: space-between;
     color: grey;
     padding: 10px 0;
     overflow: hidden;
+    min-height: 50px;
 }
 
 .col-nav li{
@@ -51,9 +51,8 @@ ul{
 }
 
 .playlist {
-    overflow: auto;
-    background-color: red;
     flex-grow: 1;
+    overflow: auto;    
 }
 /* ---------------------------------------------- */
 .col-big{
