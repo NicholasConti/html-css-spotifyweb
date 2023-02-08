@@ -58,8 +58,9 @@ ul{
 .col-big{
    width: calc(100% - 50px);
    height: calc(100vh - 90px);
-    overflow: auto;
+   overflow: auto;
    background-color: #141922;
+   padding: 20px;
 }
 /* ---------------------------------------------- */
 .upgrade{
@@ -95,8 +96,22 @@ ul{
     flex-wrap: wrap;
 }
 
+/* --------------------------------------------------------- */
+/* SEZIONE PLAYED */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
+  .card {
+    flex-basis: calc(100% / 2 - 10px);
+    text-align: center;
+  }
 
+  .row .card img{
+    width: 100%;
+  }
 
 /* ---------------------------------------------- */
 /* FOOTER */
