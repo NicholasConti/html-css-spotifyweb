@@ -137,8 +137,7 @@ footer{
 }
 .song{
     display: flex;
-    padding: 25px 0;
-    background-color: white; /*TOGLIERE */
+    align-items: center;
 }
 .song img{
     max-width: 40px;
@@ -150,14 +149,14 @@ footer{
     flex-grow: 1;
     padding: 10px 0;
     height: 100%;
-    background-color: white; /*TOGLIERE */
 }
 
 .contr-top{
     margin: 0 auto;
-    width: 200px;
-    height: 20px;
-    background-color: yellow;
+    max-width: 200px;
+}
+.contr-top .flex{
+    gap: 20px;
 }
 .contr-bot{
     width: 100%;
@@ -170,6 +169,21 @@ footer{
     background-color: #5a5a5a;
     border-radius: 5px;
 }
+
+.volume{
+    line-height: 90px;
+}
+.volume .flex{
+    gap: 10px;
+}
+.vol-barr {
+    width: 120px;
+    height: 4px;
+    background: #535353;
+    border-radius: 2px;
+    align-self: center;
+    
+  }
 /* ------------------------------------------------------ */
 
 
