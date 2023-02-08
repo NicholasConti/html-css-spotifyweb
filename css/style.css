@@ -65,13 +65,14 @@ ul{
 /* ---------------------------------------------- */
 .upgrade{
     height: 90px;
-    background-color: rgba(8,11,18,0.5);
+    background-color: #080b12;
     text-align: right;
     line-height: 90px;
     padding-right: 5px;
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 100;
     width:calc(100% - 50px);
 }
 
@@ -113,6 +114,10 @@ ul{
     width: 100%;
   }
 
+  #popular img{
+    border-radius: 50%;
+    object-fit: cover;
+  }
 /* ---------------------------------------------- */
 /* FOOTER */
 footer{
@@ -144,9 +149,16 @@ footer{
 
     .upgrade{
         width:calc(100% - 230px);
-    }
-
-
-    
+    }   
 }
 
+@media screen and (min-width:640px){
+    .card {
+        flex-basis: calc(100% / 4 - 10px);
+      }
+}
+@media screen and (min-width:878px){
+    .card {
+        flex-basis: calc(100% / 6 - 10px);
+      }
+}
