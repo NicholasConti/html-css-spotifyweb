@@ -37,23 +37,45 @@ ul{
     padding: 10px 0;
     overflow: hidden;
     min-height: 50px;
+    align-items: center;
 }
 
 .col-nav li{
     text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.col-nav li span{
+    font-size: 14px;
 }
 
 .logo-small{
     width: 20px;
 }
-.flex.column li{
-    margin-bottom: 10px;
-}
 
 .playlist {
     flex-grow: 1;
-    overflow: auto;    
+    overflow: auto;  
 }
+.col-nav i.fa-plus{
+    background-color: grey;
+    color: black;
+    padding: 5px;
+}
+.playlist ul li{
+    margin: 20px 0;
+}
+.col-nav h5{
+    color: white;
+    margin-top: 20px;  
+    margin-bottom: 15px;
+}
+.bottom-auto{
+    margin-top: auto;
+    width: 100%;
+}
+
 /* ---------------------------------------------- */
 .col-big{
    width: calc(100% - 50px);
@@ -133,9 +155,10 @@ footer{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    
 }
 .song{
+    flex-basis: calc(100% / 3);
     display: flex;
     align-items: center;
 }
@@ -144,6 +167,7 @@ footer{
 }
 
 .controller{
+    flex-basis: calc(100% / 3);
     text-align: center;
     max-width: 550px;
     flex-grow: 1;
@@ -156,7 +180,7 @@ footer{
     max-width: 200px;
 }
 .contr-top .flex{
-    gap: 20px;
+    justify-content: space-between;
 }
 .contr-bot{
     width: 100%;
@@ -172,17 +196,24 @@ footer{
 
 .volume{
     line-height: 90px;
+    flex-basis: calc(100% / 3);
 }
 .volume .flex{
+    justify-content: flex-end;
     gap: 10px;
 }
 .vol-barr {
-    width: 120px;
+    width: 80px;
     height: 4px;
     background: #535353;
     border-radius: 2px;
     align-self: center;
     
+  }
+  @media screen and (min-width:552px){
+    .vol-barr{
+        width: 120px;
+    }
   }
 /* ------------------------------------------------------ */
 
@@ -215,12 +246,16 @@ footer{
     .col-nav{
         width: 230px;
         padding: 20px 15px;
+        align-items: flex-start;
     }
     .col-big{
         width: calc(100% - 230px);
     }
     .col-nav li{
         text-align: left;
+    }
+    .col-nav i{
+        margin-right: 5px;
     }
     .mobile{
         display: none;
@@ -231,7 +266,10 @@ footer{
     .playlist > div{
         overflow: auto;
     }
-
+    .bottom-auto li:first-child{
+        border-bottom:1px solid grey ;
+        padding-bottom: 5px;
+    }
     .upgrade{
         width:calc(100% - 230px);
     }   
