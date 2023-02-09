@@ -74,8 +74,8 @@ a{
     padding: 5px;
 }
 .playlist ul li{
-    margin: 10px 0;
-    font-size: 12px;
+    margin: 15px 0;
+    font-size: 14px;
 }
 .col-nav h5{
     color: white;
@@ -107,7 +107,7 @@ a{
 /* ---------------------------------------------- */
 
 .col-body{
-    padding: 15px;
+    padding: 30px 15px;
 }
 .upgrade{
     height: 90px;
@@ -131,7 +131,6 @@ a{
 
 /* ---------------------------------------------- */
 /* COL-BODY */
-
 .filter .flex{
     justify-content: center;
     gap: 20px;
@@ -139,12 +138,6 @@ a{
     font-weight: bold;
     font-size: 12px;
 }
-
-.filter .flex li:first-child{
-    border-bottom: 2px solid #adff2f;
-    border-width: 50%;
-}
-
 /* --------------------------------------------------------- */
 /* SEZIONE PLAYED */
 section{
@@ -275,11 +268,11 @@ footer{
     align-self: center;
     
   }
-  @media screen and (min-width:552px){
+@media screen and (min-width:552px){
     .vol-barr{
         width: 120px;
     }
-  }
+}
 
 .song img{
     margin: 0 10px;
@@ -303,7 +296,6 @@ footer{
     }
 }
 /* ------------------------------------------------------ */
-
 @media screen and (min-width:552px){
     .col-nav{
         width: 230px;
@@ -339,7 +331,6 @@ footer{
         border-bottom:1px solid grey ;
         padding-bottom: 5px;
     }
-
 }
 
 @media screen and (min-width:640px){
@@ -354,7 +345,6 @@ footer{
 }
 /* ------------------------------------------------------ */
 /* ANIMATIONS */
-
 /* cards */
 .img-cnt{
     position: relative;
