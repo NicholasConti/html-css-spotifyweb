@@ -323,3 +323,33 @@ footer{
         flex-basis: calc(100% / 6 - 10px);
       }
 }
+/* ------------------------------------------------------ */
+/* ANIMATIONS */
+
+/* cards */
+.img-cnt{
+    position: relative;
+}
+
+.box-hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#popular .box-hover{
+    border-radius: 50%;
+}
+.box-hover i{
+    font-size: 50px;
+    color: white;
+}
+
+.img-cnt:hover .box-hover{
+    display: flex;
+    cursor: pointer;
+}
