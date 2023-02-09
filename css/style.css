@@ -28,6 +28,11 @@ ul{
 .hidden{
     display: none;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 /* ---------------------------------------------- */
 /* COL-NAV */
 .col-nav{
@@ -352,4 +357,21 @@ footer{
 .img-cnt:hover .box-hover{
     display: flex;
     cursor: pointer;
+}
+/* UPGRADE */
+.scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.hover-white:hover{
+    color: white;
+}
+
+.hidden .hover-white:hover i{
+    background-color: white;
+}
+
+.underline:hover{
+    text-decoration: underline;
 }
