@@ -233,7 +233,11 @@ footer{
     border-radius: 5px;
     margin: 0 15px;
 }
-
+.w-barr{
+    background-color: white;
+    width: 20%;
+    height: 100%;
+}
 .volume{
     line-height: 90px;
     flex-basis: calc(100% / 3);
@@ -244,7 +248,8 @@ footer{
     color: white;
 }
 .vol-barr {
-    width: 80px;
+    flex-grow: 1;
+    max-width: 120px;
     height: 4px;
     background: #535353;
     border-radius: 2px;
@@ -363,7 +368,7 @@ footer{
     transform: scale(1.1);
     cursor: pointer;
 }
-
+/* HOVER WHITE */
 .hover-white:hover{
     color: white;
 }
@@ -371,7 +376,8 @@ footer{
 .hidden .hover-white:hover i{
     background-color: white;
 }
-
+/* UNDERLINE */
 .underline:hover{
     text-decoration: underline;
 }
+/* PLAYER BARS */
