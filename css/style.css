@@ -237,6 +237,19 @@ footer{
     background-color: white;
     width: 20%;
     height: 100%;
+    position: relative;
+}
+
+.point{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
 }
 .volume{
     line-height: 90px;
@@ -381,3 +394,18 @@ footer{
     text-decoration: underline;
 }
 /* PLAYER BARS */
+.barr:hover .w-barr{
+    background-color: rgb(113, 231, 84);
+    cursor: pointer;
+}
+.vol-barr:hover .w-barr{
+    background-color: rgb(113, 231, 84);
+    cursor: pointer;
+}
+
+.barr:hover .point{
+    display: block;
+}
+.vol-barr:hover .point{
+    display: block;
+}
