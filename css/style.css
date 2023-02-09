@@ -74,12 +74,12 @@ a{
     padding: 5px;
 }
 .playlist ul li{
-    margin: 20px 0;
+    margin: 10px 0;
+    font-size: 12px;
 }
 .col-nav h5{
     color: white;
-    margin-top: 20px;  
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 .bottom-auto{
     margin-top: auto;
@@ -116,6 +116,7 @@ a{
     line-height: 90px;
     padding-right: 15px;
     position: sticky;
+    z-index: 100;
     top: 0;
     width:100%;
 }
@@ -137,6 +138,11 @@ a{
     flex-wrap: wrap;
     font-weight: bold;
     font-size: 12px;
+}
+
+.filter .flex li:first-child{
+    border-bottom: 2px solid #adff2f;
+    border-width: 50%;
 }
 
 /* --------------------------------------------------------- */
@@ -395,11 +401,11 @@ footer{
 }
 /* PLAYER BARS */
 .barr:hover .w-barr{
-    background-color: rgb(113, 231, 84);
+    background-color: #adff2f;
     cursor: pointer;
 }
 .vol-barr:hover .w-barr{
-    background-color: rgb(113, 231, 84);
+    background-color: #adff2f;
     cursor: pointer;
 }
 
